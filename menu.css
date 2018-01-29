@@ -1,0 +1,100 @@
+/* =Menu -------------------------------------------------------------- */
+
+#access .menu-header,
+div.menu {
+	font-size: 14px;
+	margin-left: 2px;
+}
+#access .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin: 0px;
+}
+#access .menu-header li,
+div.menu li {
+	float: left;
+	position: relative;
+}
+#access{
+/*	background: url(images/nav_strip_lb.png) #8BA0D1 no-repeat;	
+	background: #006D33;			*/	
+	line-height: 20px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#access a {
+	color: #ffffff;
+	border-right: 2px solid #ffffff;
+	display: block;
+	line-height: 20px;
+	padding: 0px 10px; /* top, rig, bot, lef */
+	text-decoration: none;
+}
+
+#access a:hover{ 
+	background: #CBCBCB;
+	color: #006D33;
+	line-height: 20px;
+	text-decoration: none;
+}
+#access li:hover > a{
+	background: #CBCBCB;
+	color: #006D33;
+	line-height: 20px;
+	display: block;
+}
+/* --- inner menu =------------------------------------------------------------*/
+#access ul ul {
+	background: #BCBCBC;		/* remove to make the background transparent*/
+	font-size: 12px;
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	text-align: left;
+	line-height: 20px;
+}
+#access ul ul li {
+	min-width: 170px;
+}
+#access ul ul a {
+	background: #CBCBCB;
+	line-height: 20px;
+	height: auto;
+}
+
+#access ul ul :hover > a {
+	background: #CBCBCB;
+	color: #006D33;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+/* ============================================================================= */
+
+#access .cell{
+/*	background: url(images/nav_button.png) #8BA0D1 no-repeat;	*/
+	background: #CBCBCB;
+	color: #CBCBCB;
+	width: 160px;
+	padding: 0px 0px 0px 0px; /* top, rig, bot, lef */
+	font-size: 13px;
+	line-height: 20px;
+}
+#access .active{
+	color: #006D33;
+	padding: 7px 10px 7px 15px; /* top, rig, bot, lef */
+	font-size: 13px;
+	text-decoration: none;
+	line-height: 20px;
+}
+#access .passive{
+	background: #BCBCBC;
+	color: #ffffff;
+	padding: 7px 10px 7px 15px; /* top, rig, bot, lef */
+	font-size: 13px;
+	line-height: 20px;
+}
